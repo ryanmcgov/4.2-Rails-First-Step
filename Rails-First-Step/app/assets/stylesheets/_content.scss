@@ -52,16 +52,16 @@
     ul {
       @include block-list;
       .related1 {
-        @include blue-overlay('../images/related1.jpg');
+        @include blue-overlay('related1.jpg');
       }
       .related2 {
-        @include blue-overlay('../images/related2.jpg');
+        @include blue-overlay('related2.jpg');
       }
       .related3 {
-        @include blue-overlay('../images/related3.jpg');
+        @include blue-overlay('related3.jpg');
       }
       .related4 {
-        @include blue-overlay('../images/related4.jpg');
+        @include blue-overlay('related4.jpg');
       }
       li {
         margin-bottom: 10px;
@@ -75,7 +75,7 @@
     }
   }
   .ad__space {
-    @include blue-overlay('../images/ad.png');
+    @include blue-overlay('ad.png');
     height: 350px;
     span {
       position: relative;
@@ -144,7 +144,7 @@
       line-height: 16px;
     }
     .ad__space {
-      @include blue-overlay('../images/ad.png');
+      @include blue-overlay('ad.png');
       height: 350px;
       span {
         position: relative;
@@ -189,19 +189,19 @@
       padding: 0;
       margin: 0;
       .related1 {
-        @include blue-overlay('../images/related1.jpg');
+        @include blue-overlay('related1.jpg');
         width: 25%;
       }
       .related2 {
-        @include blue-overlay('../images/related2.jpg');
+        @include blue-overlay('related2.jpg');
         width: 25%;
       }
       .related3 {
-        @include blue-overlay('../images/related3.jpg');
+        @include blue-overlay('related3.jpg');
         width: 25%;
       }
       .related4 {
-        @include blue-overlay('../images/related4.jpg');
+        @include blue-overlay('related4.jpg');
         width: 25%;
       }
       li {

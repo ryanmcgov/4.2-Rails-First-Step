@@ -1,0 +1,236 @@
+@media all and (max-width: $window-mobile-max) {
+  .surf__content {
+    @include surf-content-mobile;
+    letter-spacing: -1px;
+    p {
+      line-height: 25px;
+    }
+    a {
+      color: $gray-theme;
+    }
+  }
+  .surf__contentTitle {
+    vertical-align: center;
+    > span {
+      @include post-title;
+    } 
+  }
+  .quote {
+    color: $color-theme-light;
+    font-size: 22px;
+  }
+  .author {
+    @include block-list;
+    text-align: center;
+    img {
+      @include profile-pic;
+    }
+    span {
+      color: $color-theme-light;
+    }
+  }
+  .social__mediaList {
+    padding: 0;
+    li {
+      @include inline-block-list;
+      margin: 0 5px 0 5px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+  .surf__contentPopular {
+    margin-top: 10px;
+    span {
+      color: $color-theme;
+      font-size: 28px;
+      padding: 0 15%;
+    }
+    ul {
+      @include block-list;
+      .related1 {
+        @include blue-overlay('../images/related1.jpg');
+      }
+      .related2 {
+        @include blue-overlay('../images/related2.jpg');
+      }
+      .related3 {
+        @include blue-overlay('../images/related3.jpg');
+      }
+      .related4 {
+        @include blue-overlay('../images/related4.jpg');
+      }
+      li {
+        margin-bottom: 10px;
+        span {
+          position: relative;
+          top: 175px;
+          left: 10px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .ad__space {
+    @include blue-overlay('../images/ad.png');
+    height: 350px;
+    span {
+      position: relative;
+      left: 219px;
+      top: 340px;
+    }
+  }
+  .surf_contentShare {
+    position: absolute;
+    top: 221px;
+    left: -28px;
+    ul {
+      @include block-list;
+      li {
+        height: 26px;
+        width: 26px;
+        margin-bottom: 3px;
+        img {
+          height: 26px;
+          width: 26px;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 901px) {
+  .surf__content {
+    height: 100%;
+    width: 100%;
+    // margin-top: 10px;
+    display: block;
+    a {
+      color: $gray-theme;
+    }
+  }
+  .surf__contentInfo {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin: 40px 5% 0 5%;
+    letter-spacing: -1px;
+    p {
+      line-height: 30px;
+    }
+    .quote {
+    color: $color-theme-light;
+    width: 100%;
+    font-size: 40px;
+    padding-left: 5px;
+    border-left: 3px solid $gray-theme;
+    }
+  }
+  .surf__contentTitle {
+    span {
+      @include post-title;
+    }
+  }
+  .surf__contentFiller {
+    display: inline-block;
+    width: 20%;
+    margin: 40px 5% 0 5%;
+    text-align: center;
+    .side__para {
+      letter-spacing: -1;
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .ad__space {
+      @include blue-overlay('../images/ad.png');
+      height: 350px;
+      span {
+        position: relative;
+        left: 219px;
+        top: 340px;
+      }
+    }
+    .author {
+      @include block-list;
+      text-align: center;
+      img {
+        @include profile-pic;
+      }
+      span {
+        color: $color-theme-light;
+      }
+    }
+    .social__mediaList {
+      padding: 0;
+      li {
+        @include inline-block-list;
+        margin: 0 5px 0 5px;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .surf__contentPopular {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    span {
+      position: relative;
+      color: $color-theme;
+      font-size: 28px;
+      padding: 0 15%;
+    }
+    ul {
+      font-size: 0;
+      padding: 0;
+      margin: 0;
+      .related1 {
+        @include blue-overlay('../images/related1.jpg');
+        width: 25%;
+      }
+      .related2 {
+        @include blue-overlay('../images/related2.jpg');
+        width: 25%;
+      }
+      .related3 {
+        @include blue-overlay('../images/related3.jpg');
+        width: 25%;
+      }
+      .related4 {
+        @include blue-overlay('../images/related4.jpg');
+        width: 25%;
+      }
+      li {
+        @include inline-block-list;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0px;
+        span {
+          position: relative;
+          top: 175px;
+          left: 10px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .surf_contentShare {
+    ul {
+      li {
+        @include inline-block-list;
+        height: 26px;
+        width: 26px;
+        margin-bottom: 3px;
+        img {
+          height: 26px;
+          width: 26px;
+        }
+      }
+    }
+  }
+}

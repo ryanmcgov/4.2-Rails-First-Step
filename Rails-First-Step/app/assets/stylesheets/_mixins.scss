@@ -1,0 +1,92 @@
+$font-family       : 'Muli', sans-serif, Helvetica, Helvetica Neue, Arial;
+$color-theme       : #0B3551;
+$color-theme-light : #196FB1;
+$logo-size         : 40px;
+$title-font        : #196FB1;
+$max-width         : 100%;
+$window-mobile-max : 900px;
+$gray-theme        : #A3A3A3;
+$text-outline      : -1px -1px 0 #000,
+                      1px -1px 0 #000,
+                      -1px 1px 0 #000,
+                       1px 1px 0 #000;
+
+
+@mixin logo-placement {
+  text-align: center;
+  line-height: 21px;
+  padding: 20px 0 0 0;
+  margin: 0;
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@mixin hf-dimensions-mobile {
+  width: $max-width;
+  height: auto;
+  position: relative;
+}
+@mixin surf-content-mobile {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+@mixin post-title {
+  color: $color-theme;
+  font-size: 56px;
+}
+@mixin profile-pic {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+@mixin block-list {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+}
+@mixin inline-block-list {
+  display: inline-block;
+  list-style-type: none;
+}
+@mixin related-pic {
+  height: 220px;
+  width: 100%;
+  padding: 0;
+}
+@mixin blue-overlay ($picture){
+  height: 220px;
+  width: 25%;
+  background:
+  linear-gradient(
+    rgba(11, 53, 113, .70),
+    rgba(11, 53, 113, .70)
+    ),
+    url($picture);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@mixin related-span {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  color: #fff;
+  text-shadow: $text-outline;
+}
+@mixin top-nav {
+  text-align: center;
+  padding: 0;
+  li {
+    @include inline-block-list;
+    margin: 0 15%;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    line-height: 5px;
+    font-weight: 500;
+  }
+}

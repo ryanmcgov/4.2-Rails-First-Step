@@ -1,0 +1,105 @@
+@media all and (max-width: $window-mobile-max) {
+  .surf__header {
+    @include hf-dimensions-mobile;
+    background: $color-theme;
+    .title__logo {
+      @include logo-placement;
+      @include block-list;
+      .blog__title {
+        color: #fff
+      }
+      .credit {
+        font-size: 12px;
+        color: $color-theme-light;
+      }
+    }
+  }
+  .surf__headerNav {
+    margin: 0;
+    padding: 0;
+    background:
+    linear-gradient(
+      rgba(11, 53, 113, .70),
+      rgba(11, 53, 113, .70)
+    ),
+    url('bb.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    > ul {
+      text-align: center;
+      padding: 0;
+      > li {
+        @include inline-block-list;
+        margin: 0 15% 0 15%;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        line-height: 5px;
+        font-weight: 500;
+      }
+    }
+  }
+  .big__title {
+    display: none;
+  }
+}
+@media all and (min-width: 901px) {
+  .surf__header {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: 600px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background:
+    linear-gradient(
+      rgba(11, 53, 113, .70),
+      rgba(11, 53, 113, .70)
+    ),
+    url('coverPic.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .surf__headerNav {
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    right: 74px;
+    ul {
+      @include top-nav;
+      li {
+        margin: 0 2%;
+      }
+    }
+  }
+  .title__logo {
+    margin-top: 0;
+    padding-left: 5%; 
+    li {
+      @include logo-placement;
+      @include inline-block-list;
+    }
+    .credit {
+      display: none;
+    }
+  }
+  .big__title {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      margin-bottom: 0;
+      font-size: 72px;
+    }
+    span {
+      color: $color-theme;
+    }
+  }
+}

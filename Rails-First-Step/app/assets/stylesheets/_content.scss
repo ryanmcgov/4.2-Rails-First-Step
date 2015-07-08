@@ -146,6 +146,7 @@
     .ad__space {
       @include blue-overlay('ad.png');
       height: 350px;
+      margin: 0;
       span {
         position: relative;
         left: 219px;
